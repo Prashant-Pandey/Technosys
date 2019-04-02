@@ -1,33 +1,34 @@
-body{
+body {
     overflow-x: hidden;
 }
 
-.custom-color-navbar{
+.custom-color-navbar {
     background-color: transparent
-    /* background-image: linear-gradient(#6746c3 0%, #311b92 100%) */
+        /* background-image: linear-gradient(#6746c3 0%, #311b92 100%) */
 }
 
-.navbar-top{
+.navbar-top {
     z-index: 10000;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    color: #000;
+    color: #fff;
     font-weight: 900;
 }
+
 /* slider css */
 .sl-slider-wrapper {
-	width: 800px;
-	height: 400px;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .sl-slider {
-	position: absolute;
-	top: 0;
-	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Slide wrapper and slides */
@@ -35,113 +36,113 @@ body{
 .sl-slide,
 .sl-slides-wrapper,
 .sl-slide-inner {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-} 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
 
 .sl-slide {
-	z-index: 1;
+    z-index: 1;
 }
 
 /* The duplicate parts/slices */
 
 .sl-content-slice {
-	overflow: hidden;
-	position: absolute;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	background: #fff;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	backface-visibility: hidden;
-	opacity : 1;
+    overflow: hidden;
+    position: absolute;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background: #fff;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 1;
 }
 
 /* Horizontal slice */
 
 .sl-slide-horizontal .sl-content-slice {
-	width: 100%;
-	height: 50%;
-	left: -200px;
-	-webkit-transform: translateY(0%) scale(1);
-	-moz-transform: translateY(0%) scale(1);
-	-o-transform: translateY(0%) scale(1);
-	-ms-transform: translateY(0%) scale(1);
-	transform: translateY(0%) scale(1);
+    width: 100%;
+    height: 50%;
+    left: -200px;
+    -webkit-transform: translateY(0%) scale(1);
+    -moz-transform: translateY(0%) scale(1);
+    -o-transform: translateY(0%) scale(1);
+    -ms-transform: translateY(0%) scale(1);
+    transform: translateY(0%) scale(1);
 }
 
 .sl-slide-horizontal .sl-content-slice:first-child {
-	top: -200px;
-	padding: 200px 200px 0px 200px;
+    top: -200px;
+    padding: 200px 200px 0px 200px;
 }
 
 .sl-slide-horizontal .sl-content-slice:nth-child(2) {
-	top: 50%;
-	padding: 0px 200px 200px 200px;
+    top: 50%;
+    padding: 0px 200px 200px 200px;
 }
 
 /* Vertical slice */
 
 .sl-slide-vertical .sl-content-slice {
-	width: 50%;
-	height: 100%;
-	top: -200px;
-	-webkit-transform: translateX(0%) scale(1);
-	-moz-transform: translateX(0%) scale(1);
-	-o-transform: translateX(0%) scale(1);
-	-ms-transform: translateX(0%) scale(1);
-	transform: translateX(0%) scale(1);
+    width: 50%;
+    height: 100%;
+    top: -200px;
+    -webkit-transform: translateX(0%) scale(1);
+    -moz-transform: translateX(0%) scale(1);
+    -o-transform: translateX(0%) scale(1);
+    -ms-transform: translateX(0%) scale(1);
+    transform: translateX(0%) scale(1);
 }
 
 .sl-slide-vertical .sl-content-slice:first-child {
-	left: -200px;
-	padding: 200px 0px 200px 200px;
+    left: -200px;
+    padding: 200px 0px 200px 200px;
 }
 
 .sl-slide-vertical .sl-content-slice:nth-child(2) {
-	left: 50%;
-	padding: 200px 200px 200px 0px;
+    left: 50%;
+    padding: 200px 200px 200px 0px;
 }
 
 /* Content wrapper */
 /* Width and height is set dynamically */
 .sl-content-wrapper {
-	position: absolute;
+    position: absolute;
 }
 
 .sl-content {
-	width: 100%;
-	height: 100%;
-	background: #fff;
+    width: 100%;
+    height: 100%;
+    background: #fff;
 }
 
 /* Default styles for background colors */
 .sl-slide-horizontal .sl-slide-inner {
-	background: #ddd;
+    background: #ddd;
 }
 
 .sl-slide-vertical .sl-slide-inner {
-	background: #ccc;
+    background: #ccc;
 }
 
-.container.slider-technosys{
+.container.slider-technosys {
     width: 100%;
     max-width: 100%;
     padding: 0;
     height: 90vh;
 }
 
-.main{
+.main {
     margin-top: -56px;
 }
 
-.top-carousel-bottom-img{
+.top-carousel-bottom-img {
     width: 120%;
     z-index: 10;
     position: absolute;
@@ -151,59 +152,63 @@ body{
     height: 173px;
 }
 
-@media(max-width: 660px){
-    .top-carousel-bottom-img{
+@media(max-width: 660px) {
+    .top-carousel-bottom-img {
         bottom: 253px;
     }
 }
+
 /* solutions */
-.product-area{
+.product-area {
     /* background: #000; */
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     align-content: center;
-    padding: 28px;
+    /* padding: 28px; */
     background-image: url('../img/overview-bg.svg');
+    background-repeat: no-repeat;
+    /* background-color: #13161F; */
     padding-top: 350px;
 }
 
-.product-area .card{
-    -webkit-box-shadow: 0px 0px 60px 10px rgba(7,55,102,0.69);
--moz-box-shadow: 0px 0px 60px 10px rgba(7,55,102,0.69);
-box-shadow: 0px 0px 60px 10px rgba(7,55,102,0.69);
+.product-area .card {
+    /* background-color: rgba(7, 55, 102, 0.69); */
+    -webkit-box-shadow: 0px 0px 60px 10px rgba(7, 55, 102, 0.69);
+    -moz-box-shadow: 0px 0px 60px 10px rgba(7, 55, 102, 0.69);
+    box-shadow: 0px 0px 60px 10px rgba(7, 55, 102, 0.69);
 }
 
-.product-area .card .card-body .justify-content-center img{
+.product-area .card .card-body .justify-content-center img {
     height: 100px;
     width: 100px;
 }
 
-.project-card{
+.project-card {
     max-width: 370px;
 }
 
-.card-img-overlay.card-content{
+.card-img-overlay.card-content {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.5);
     transition: opacity 0.7s;
 }
 
-.project-card:hover .card-content{
+.project-card:hover .card-content {
     opacity: 1;
 
 }
 
-.card-content .techstack-items li{
+.card-content .techstack-items li {
     background-color: #000;
     font-size: 17px;
     padding: 1px 8px 1px 8px;
     margin: 0 8px 3px 0;
 }
 
-.academic-background .figure-img{
+.academic-background .figure-img {
     height: 200px;
     width: auto;
 }
