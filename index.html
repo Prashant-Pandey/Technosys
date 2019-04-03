@@ -1,83 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation desktop landscape rd-navbar-static-linked" lang="en">
-
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <style type="text/css">
-    .gm-control-active>img {
-      box-sizing: content-box;
-      display: none;
-      left: 50%;
-      pointer-events: none;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%)
-    }
-
-    .gm-control-active>img:nth-child(1) {
-      display: block
-    }
-
-    .gm-control-active:hover>img:nth-child(1),
-    .gm-control-active:active>img:nth-child(1) {
-      display: none
-    }
-
-    .gm-control-active:hover>img:nth-child(2),
-    .gm-control-active:active>img:nth-child(3) {
-      display: block
-    }
-  </style>
-  <style type="text/css">
-    .gm-ui-hover-effect {
-      opacity: .6
-    }
-
-    .gm-ui-hover-effect:hover {
-      opacity: 1
-    }
-  </style>
-  <style type="text/css">
-    .dismissButton {
-      background-color: #fff;
-      border: 1px solid #dadce0;
-      color: #1a73e8;
-      border-radius: 4px;
-      font-family: Roboto, sans-serif;
-      font-size: 14px;
-      height: 36px;
-      cursor: pointer;
-      padding: 0 24px
-    }
-
-    .dismissButton:hover {
-      background-color: rgba(66, 133, 244, 0.04);
-      border: 1px solid #d2e3fc
-    }
-
-    .dismissButton:focus {
-      background-color: rgba(66, 133, 244, 0.12);
-      border: 1px solid #d2e3fc;
-      outline: 0
-    }
-
-    .dismissButton:hover:focus {
-      background-color: rgba(66, 133, 244, 0.16);
-      border: 1px solid #d2e2fd
-    }
-
-    .dismissButton:active {
-      background-color: rgba(66, 133, 244, 0.16);
-      border: 1px solid #d2e2fd;
-      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
-    }
-
-    .dismissButton:disabled {
-      background-color: #fff;
-      border: 1px solid #f1f3f4;
-      color: #3c4043
-    }
-  </style>
   <!-- Site Title-->
   <title>Technosys</title>
   <!-- <meta name="format-detection" content="telephone=no"> -->
@@ -86,164 +10,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
   <!-- Stylesheets-->
-  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
 		<![endif]-->
-  <style type="text/css">
-    .ncf-container-otsledit {
-      font-size: 14px;
-      box-sizing: border-box;
-      position: fixed;
-      z-index: 999999
-    }
-
-    .ncf-container-otsledit.nfc-top-left-otsledit {
-      top: 12px;
-      left: 12px
-    }
-
-    .ncf-container-otsledit.nfc-top-right-otsledit {
-      top: 12px;
-      right: 12px
-    }
-
-    .ncf-container-otsledit.nfc-bottom-right-otsledit {
-      bottom: 12px;
-      right: 12px
-    }
-
-    .ncf-container-otsledit.nfc-bottom-left-otsledit {
-      bottom: 12px;
-      left: 12px
-    }
-
-    @media (max-width: 767px) {
-      .ncf-container-otsledit {
-        left: 0;
-        right: 0
-      }
-    }
-
-    .ncf-container-otsledit .ncf-otsledit {
-      background: #fff;
-      transition: .3s ease;
-      position: relative;
-      pointer-events: auto;
-      overflow: hidden;
-      margin: 0 0 6px;
-      padding: 30px;
-      width: 300px;
-      border-radius: 3px 3px 3px 3px;
-      box-shadow: 0 0 12px #999;
-      color: #000 !important;
-      opacity: .9;
-      -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-      filter: alpha(opacity=90);
-      background-position: 15px !important;
-      background-repeat: no-repeat !important;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none
-    }
-
-    .ncf-container-otsledit .ncf-otsledit:hover {
-      box-shadow: 0 0 12px #000;
-      opacity: 1;
-      cursor: pointer
-    }
-
-    .ncf-container-otsledit .ncf-otsledit .ncf-title-otsledit {
-      font-weight: 700;
-      font-size: 16px;
-      text-align: left;
-      margin-top: 0;
-      margin-bottom: 6px;
-      color: #fff !important;
-      word-wrap: break-word
-    }
-
-    .ncf-container-otsledit .ncf-otsledit .nfc-message-otsledit {
-      margin: 0;
-      text-align: left;
-      word-wrap: break-word
-    }
-
-    .ncf-container-otsledit .success-otsledit {
-      background: #51a351;
-      color: #fff !important;
-      padding: 15px 15px 15px 50px;
-      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==")
-    }
-
-    .ncf-container-otsledit .info-otsledit {
-      background: #2f96b4;
-      color: #fff !important;
-      padding: 15px 15px 15px 50px;
-      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=")
-    }
-
-    .ncf-container-otsledit .warning-otsledit {
-      background: #f87400;
-      color: #fff !important;
-      padding: 15px 15px 15px 50px;
-      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=")
-    }
-
-    .ncf-container-otsledit .error-otsledit {
-      background: #bd362f;
-      color: #fff !important;
-      padding: 15px 15px 15px 50px;
-      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=") !important
-    }
-
-    .ncf-container-otsledit button {
-      position: relative;
-      right: -.3em;
-      top: -.3em;
-      float: right;
-      font-weight: 700;
-      color: #fff !important;
-      text-shadow: 0 1px 0 #fff;
-      opacity: .8;
-      line-height: 1;
-      font-size: 16px;
-      padding: 0;
-      cursor: pointer;
-      background: transparent;
-      border: 0
-    }
-
-    .ncf-container-otsledit a {
-      color: #fff !important;
-    }
-
-    .ncf-container-otsledit button:hover {
-      opacity: 1
-    }
-  </style>
-  <style type="text/css">
-    .gm-style {
-      font: 400 11px Roboto, Arial, sans-serif;
-      text-decoration: none;
-    }
-
-    .gm-style img {
-      max-width: none;
-    }
-  </style>
 </head>
 
-<body class="">
+<body>
   <!-- Page-->
   <div class="page text-center">
     <!-- Page Header-->
     <header class="page-head header-custom">
       <!-- RD Navbar-->
-      <div class="rd-navbar-wrap" style="height: 100px;">
+      <div class="rd-navbar-wrap">
         <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fullwidth" data-lg-device-layout="rd-navbar-static"
           data-lg-layout="rd-navbar-static" class="rd-navbar rd-navbar-original rd-navbar-static">
           <div class="rd-navbar-inner">
@@ -264,15 +46,15 @@
                 </dl>
               </address>
               <!-- RD Navbar Brand-->
-              <div class="rd-navbar-brand"><a href="https://livedemo00.template-help.com/wt_58066/index.html"
-                  class="brand-name">delivery<span class="text-primary">co.</span></a></div>
+              <div class="rd-navbar-brand"><a href="index.html"
+                  class="brand-name">Technosys<span class="text-primary"></span></a></div>
             </div>
             <div class="rd-navbar-nav-wrap toggle-original-elements">
               <!-- RD Navbar Nav-->
               <ul class="rd-navbar-nav">
-                <li class="active"><a href="https://livedemo00.template-help.com/wt_58066/">Home</a></li>
+                <li class="active"><a href="#">Home</a></li>
                 <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a
-                    href="https://livedemo00.template-help.com/wt_58066/about.html">About</a><span
+                    href="#">About</a><span
                     class="rd-navbar-submenu-toggle"></span>
                   <!-- RD Navbar Dropdown-->
                   <ul class="rd-navbar-dropdown">
@@ -284,7 +66,7 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Prices</a></li>
                         <li><a href="#">Delivery</a></li>
-                        <li><a href="https://livedemo00.template-help.com/wt_58066/404.html">404</a></li>
+                        <li><a href="#">404</a></li>
                       </ul>
                     </li>
                     <li><a href="#">International delivery</a></li>
@@ -292,9 +74,9 @@
                     <li><a href="#">Expand your Opportunities</a></li>
                   </ul>
                 </li>
-                <li><a href="https://livedemo00.template-help.com/wt_58066/services.html">services</a></li>
-                <li><a href="https://livedemo00.template-help.com/wt_58066/news.html">news</a></li>
-                <li><a href="https://livedemo00.template-help.com/wt_58066/contacts.html">contacts</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">contacts</a></li>
               </ul>
             </div>
           </div>
@@ -304,16 +86,16 @@
       <div data-height="480px" data-min-height="560px" data-nav="true" data-slide-effect="fade"
         class="swiper-container swiper-slider swiper-container-horizontal swiper-container-fade" style="height: 560px;">
         <div class="swiper-wrapper" style="transition-duration: 600ms;">
-          <div data-slide-bg="images/page-1_img03.jpg" class="swiper-slide swiper-slide-duplicate"
-            style="background-image: url(&quot;images/page-1_img03.jpg&quot;); background-size: cover; width: 1287px; transform: translate3d(0px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
-            data-swiper-slide-index="2">
+          <div data-slide-bg="img/SliderImg1.png" class="swiper-slide"
+            style="background-image: url(&quot;img/SliderImg1.png&quot;); background-size: cover; width: 1287px; transform: translate3d(0px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
+            data-swiper-slide-index="0">
             <div class="swiper-slide-caption text-md-left">
               <div data-caption-animate="fadeIn" data-caption-delay="300" class="container not-animated">
                 <div class="row">
                   <div class="col-lg-11">
                     <h1 class="text-bold">Providing the highest quality</h1>
                     <h3>service 24 hours a day</h3>
-                    <p>Delivery Co. provides international express delivery of documents, parcels and freight to<br
+                    <p>High quality services in<br
                         class="hidden visible-md visible-lg visible-xl">more than 150 countries around the world within
                       4 to 7 business days.</p><a href="#" class="btn btn-md btn-big-stone">read more</a>
                   </div>
@@ -322,16 +104,16 @@
             </div>
             <div data-caption-animate="fadeIn" data-caption-delay="300" class="swiper-overlay not-animated"></div>
           </div>
-          <div data-slide-bg="images/page-1_img01.jpg" class="swiper-slide"
-            style="background-image: url(&quot;images/page-1_img01.jpg&quot;); background-size: cover; width: 1287px; transform: translate3d(-1287px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
-            data-swiper-slide-index="0">
+          <div data-slide-bg="img/SliderImg2.jpeg" class="swiper-slide"
+            style="background-image: url(&quot;img/SliderImg2.jpeg&quot;); background-size: cover; width: 1287px; transform: translate3d(-1287px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
+            data-swiper-slide-index="1">
             <div class="swiper-slide-caption text-md-left">
               <div data-caption-animate="fadeIn" data-caption-delay="300" class="container not-animated">
                 <div class="row">
                   <div class="col-lg-8">
                     <h1 class="text-bold">International delivery</h1>
                     <h3>4 days - 150 countries</h3>
-                    <p>Delivery Co. provides international express
+                    <p>Technosys provides international express
                       delivery of documents, parcels and freight to more than 150 countries
                       around the world within 4 to 7 business days.</p><a href="#" class="btn btn-md btn-big-stone">read
                       more</a>
@@ -341,16 +123,16 @@
             </div>
             <div data-caption-animate="fadeIn" data-caption-delay="300" class="swiper-overlay not-animated"></div>
           </div>
-          <div data-slide-bg="images/page-1_img02.jpg" class="swiper-slide swiper-slide-prev"
-            style="background-image: url(&quot;images/page-1_img02.jpg&quot;); background-size: cover; width: 1287px; transform: translate3d(-2574px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
-            data-swiper-slide-index="1">
+          <div data-slide-bg="img/SliderImg3.png" class="swiper-slide"
+            style="background-image: url(&quot;img/SliderImg3.png&quot;); background-size: cover; width: 1287px; transform: translate3d(-2574px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
+            data-swiper-slide-index="2">
             <div class="swiper-slide-caption text-md-left">
               <div data-caption-animate="fadeIn" data-caption-delay="300" class="container fadeIn animated">
                 <div class="row">
                   <div class="col-lg-8">
                     <h1 class="text-bold">We are proud to</h1>
                     <h3>be always on demand</h3>
-                    <p>Delivery Co. provides international express
+                    <p>Technosys provides international express
                       delivery of documents, parcels and freight to more than 150 countries
                       around the world within 4 to 7 business days.</p><a href="#" class="btn btn-md btn-big-stone">read
                       more</a>
@@ -360,16 +142,16 @@
             </div>
             <div data-caption-animate="fadeIn" data-caption-delay="300" class="swiper-overlay fadeIn animated"></div>
           </div>
-          <div data-slide-bg="images/page-1_img03.jpg" class="swiper-slide swiper-slide-active"
-            style="background-image: url(&quot;images/page-1_img03.jpg&quot;); background-size: cover; width: 1287px; transform: translate3d(-3861px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
-            data-swiper-slide-index="2">
+          <div data-slide-bg="img/SliderImg4.png" class="swiper-slide"
+            style="background-image: url(&quot;img/SliderImg4.png&quot;); background-size: cover; width: 1287px; transform: translate3d(-3861px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
+            data-swiper-slide-index="3">
             <div class="swiper-slide-caption text-md-left">
               <div data-caption-animate="fadeIn" data-caption-delay="300" class="container not-animated">
                 <div class="row">
                   <div class="col-lg-11">
                     <h1 class="text-bold">Providing the highest quality</h1>
                     <h3>service 24 hours a day</h3>
-                    <p>Delivery Co. provides international express delivery of documents, parcels and freight to<br
+                    <p>Technosys provides international express delivery of documents, parcels and freight to<br
                         class="hidden visible-md visible-lg visible-xl">more than 150 countries around the world within
                       4 to 7 business days.</p><a href="#" class="btn btn-md btn-big-stone">read more</a>
                   </div>
@@ -378,16 +160,16 @@
             </div>
             <div data-caption-animate="fadeIn" data-caption-delay="300" class="swiper-overlay not-animated"></div>
           </div>
-          <div data-slide-bg="images/page-1_img01.jpg" class="swiper-slide swiper-slide-duplicate swiper-slide-next"
-            style="background-image: url(&quot;images/page-1_img01.jpg&quot;); background-size: cover; width: 1287px; transform: translate3d(-5148px, 0px, 0px); transition-duration: 600ms; opacity: 0;"
-            data-swiper-slide-index="0">
+          <div data-slide-bg="img/SliderImg2.jpeg" class="swiper-slide"
+            style="background-image: url(&quot;img/SliderImg2.jpeg&quot;); background-size: cover; width: 1287px; transform: translate3d(-5148px, 0px, 0px); transition-duration: 600ms; opacity: 0;"
+            data-swiper-slide-index="4">
             <div class="swiper-slide-caption text-md-left">
               <div data-caption-animate="fadeIn" data-caption-delay="300" class="container not-animated">
                 <div class="row">
                   <div class="col-lg-8">
                     <h1 class="text-bold">International delivery</h1>
                     <h3>4 days - 150 countries</h3>
-                    <p>Delivery Co. provides international express
+                    <p>Technosys provides international express
                       delivery of documents, parcels and freight to more than 150 countries
                       around the world within 4 to 7 business days.</p><a href="#" class="btn btn-md btn-big-stone">read
                       more</a>
@@ -416,56 +198,56 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
-              <h3>Fast and reliable delivery services that meet your timeline.</h3>
+              <h3>Fast and reliable services</h3>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6 col-md-4 col-lg-3">
               <!-- Product-->
               <div class="product"><span class="icon icon-lg text-primary thin-icon-box center-block"></span>
-                <div class="h4"><a href="#">Create a Shipment</a></div>
+                <div class="h4"><a href="#">CCTV Surveillance Solutions</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-0">
               <!-- Product-->
               <div class="product"><span class="icon icon-lg text-primary thin-icon-documents center-block"></span>
-                <div class="h4"><a href="#">Ship Now with Credit Card</a></div>
+                <div class="h4"><a href="#">Intelligent Traffic Management System</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20 offset-md-top-0">
               <!-- Product-->
               <div class="product"><span class="icon icon-lg text-primary thin-icon-calculator center-block"></span>
-                <div class="h4"><a href="#">Get Rates and Transit Times</a></div>
+                <div class="h4"><a href="#">Access Control System</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20 offset-lg-top-0">
               <!-- Product-->
               <div class="product"><span class="icon icon-lg text-primary thin-icon-timer center-block"></span>
-                <div class="h4"><a href="#">Schedule and Manage Pickups</a></div>
+                <div class="h4"><a href="#">Intelligent Building Managment Systen</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20">
               <!-- Product-->
               <div class="product"><span class="icon icon-lg text-primary thin-icon-cart center-block"></span>
-                <div class="h4"><a href="#">Order Shipping Supplies</a></div>
+                <div class="h4"><a href="#">Audio Visual</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20">
               <!-- Product-->
               <div class="product"><span class="icon icon-lg text-primary thin-icon-desktop center-block"></span>
-                <div class="h4"><a href="#">Pay your Bills Online</a></div>
+                <div class="h4"><a href="#">Intelligent Fire Detection System</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20">
               <!-- Product-->
               <div class="product"><span class="icon icon-lg text-primary thin-icon-address center-block"></span>
-                <div class="h4"><a href="#">Update your Address Book</a></div>
+                <div class="h4"><a href="#">Data Voice</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20">
               <!-- Product-->
               <div class="product"><span class="icon icon-lg text-primary thin-icon-ambulance center-block"></span>
-                <div class="h4"><a href="#">Access Delivery Manager</a></div>
+                <div class="h4"><a href="#">IP based PA System</a></div>
               </div>
             </div>
           </div>
@@ -1088,7 +870,7 @@
   <script src="js/core.js"></script>
   <script src="js/script.js"></script>
   <a href="#" id="ui-to-top" class="ui-to-top fa fa-angle-up"></a>
-  <div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;">
+  <!-- <div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;"> -->
     <!-- <span
       style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbswy</span> -->
   </div>
