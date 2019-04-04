@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="wide wow-animation desktop landscape rd-navbar-static-linked" lang="en">
+
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <!-- Site Title-->
@@ -10,8 +11,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
   <!-- Stylesheets-->
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <!-- <link rel="stylesheet" href="css/custom.css"> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" type="text/css" href="style/fonts.css" />
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -20,6 +24,10 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=141991569713384&autoLogAppEvents=1">
+  </script>
   <!-- Page-->
   <div class="page text-center">
     <!-- Page Header-->
@@ -46,18 +54,19 @@
                 </dl>
               </address>
               <!-- RD Navbar Brand-->
-              <div class="rd-navbar-brand"><a href="index.html"
-                  class="brand-name">Technosys<span class="text-primary"></span></a></div>
+              <div class="rd-navbar-brand"><a href="index.html" class="brand-name">Technosys<span
+                    class="text-primary"></span></a></div>
             </div>
             <div class="rd-navbar-nav-wrap toggle-original-elements">
               <!-- RD Navbar Nav-->
               <ul class="rd-navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a
-                    href="#">About</a><span
-                    class="rd-navbar-submenu-toggle"></span>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="services.html">services</a></li>
+                <!-- class="rd-navbar--has-dropdown rd-navbar-submenu" -->
+                <li><a href="about.html">About</a>
+                  <!-- <span class="rd-navbar-submenu-toggle"></span> -->
                   <!-- RD Navbar Dropdown-->
-                  <ul class="rd-navbar-dropdown">
+                  <!-- <ul class="rd-navbar-dropdown">
                     <li><a href="#">About</a></li>
                     <li><a href="#">For Private Customers</a></li>
                     <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="#">For Business Customers</a><span
@@ -72,11 +81,10 @@
                     <li><a href="#">International delivery</a></li>
                     <li><a href="#">Depots</a></li>
                     <li><a href="#">Expand your Opportunities</a></li>
-                  </ul>
+                  </ul>-->
                 </li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">news</a></li>
-                <li><a href="#">contacts</a></li>
+                <!-- <li><a href="#">news</a></li> -->
+                <li><a href="contacts.html">contacts</a></li>
               </ul>
             </div>
           </div>
@@ -86,36 +94,32 @@
       <div data-height="480px" data-min-height="560px" data-nav="true" data-slide-effect="fade"
         class="swiper-container swiper-slider swiper-container-horizontal swiper-container-fade" style="height: 560px;">
         <div class="swiper-wrapper" style="transition-duration: 600ms;">
-          <div data-slide-bg="img/SliderImg1.png" class="swiper-slide"
-            style="background-image: url(&quot;img/SliderImg1.png&quot;); background-size: cover; width: 1287px; transform: translate3d(0px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
+          <div data-slide-bg="img/SliderImg1.jpg" class="swiper-slide"
+            style="background-image: url(&quot;img/SliderImg1.jpg&quot;); background-size: cover; width: 1287px; transform: translate3d(0px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
             data-swiper-slide-index="0">
             <div class="swiper-slide-caption text-md-left">
               <div data-caption-animate="fadeIn" data-caption-delay="300" class="container not-animated">
                 <div class="row">
                   <div class="col-lg-11">
-                    <h1 class="text-bold">Providing the highest quality</h1>
-                    <h3>service 24 hours a day</h3>
-                    <p>High quality services in<br
-                        class="hidden visible-md visible-lg visible-xl">more than 150 countries around the world within
-                      4 to 7 business days.</p><a href="#" class="btn btn-md btn-big-stone">read more</a>
+                    <h1 class="text-bold">National Presence</h1>
+                    <!-- <h3></h3> -->
+                    <p>having almost 10 year old presence in surveillance industry, <br class="hidden visible-md visible-lg visible-xl">our experts brings you localized solutions customized to fit market and vertical all across India</p><a href="services.html" class="btn btn-md btn-big-stone">read more</a>
                   </div>
                 </div>
               </div>
             </div>
             <div data-caption-animate="fadeIn" data-caption-delay="300" class="swiper-overlay not-animated"></div>
           </div>
-          <div data-slide-bg="img/SliderImg2.jpeg" class="swiper-slide"
-            style="background-image: url(&quot;img/SliderImg2.jpeg&quot;); background-size: cover; width: 1287px; transform: translate3d(-1287px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
+          <div data-slide-bg="img/SliderImg2.jpg" class="swiper-slide"
+            style="background-image: url(&quot;img/SliderImg2.jpg&quot;); background-size: cover; width: 1287px; transform: translate3d(-1287px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
             data-swiper-slide-index="1">
             <div class="swiper-slide-caption text-md-left">
               <div data-caption-animate="fadeIn" data-caption-delay="300" class="container not-animated">
                 <div class="row">
                   <div class="col-lg-8">
-                    <h1 class="text-bold">International delivery</h1>
-                    <h3>4 days - 150 countries</h3>
-                    <p>Technosys provides international express
-                      delivery of documents, parcels and freight to more than 150 countries
-                      around the world within 4 to 7 business days.</p><a href="#" class="btn btn-md btn-big-stone">read
+                    <h1 class="text-bold">Count the Visitors</h1>
+                    <h3>Optimize the traffic</h3>
+                    <p>Technosys provides the advanced video analytics in Vintage IP cameras you can measure the traffic footfall in specific area.</p><a href="services.html" class="btn btn-md btn-big-stone">read
                       more</a>
                   </div>
                 </div>
@@ -123,18 +127,16 @@
             </div>
             <div data-caption-animate="fadeIn" data-caption-delay="300" class="swiper-overlay not-animated"></div>
           </div>
-          <div data-slide-bg="img/SliderImg3.png" class="swiper-slide"
-            style="background-image: url(&quot;img/SliderImg3.png&quot;); background-size: cover; width: 1287px; transform: translate3d(-2574px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
+          <div data-slide-bg="img/SliderImg3.jpg" class="swiper-slide"
+            style="background-image: url(&quot;img/SliderImg3.jpg&quot;); background-size: cover; width: 1287px; transform: translate3d(-2574px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
             data-swiper-slide-index="2">
             <div class="swiper-slide-caption text-md-left">
               <div data-caption-animate="fadeIn" data-caption-delay="300" class="container fadeIn animated">
                 <div class="row">
                   <div class="col-lg-8">
-                    <h1 class="text-bold">We are proud to</h1>
-                    <h3>be always on demand</h3>
-                    <p>Technosys provides international express
-                      delivery of documents, parcels and freight to more than 150 countries
-                      around the world within 4 to 7 business days.</p><a href="#" class="btn btn-md btn-big-stone">read
+                    <h1 class="text-bold">License Plate Recognition</h1>
+                    <!-- <h3></h3> -->
+                    <p>Crystal clear imaging with 60fps high speed video camera</p><a href="services.html" class="btn btn-md btn-big-stone">read
                       more</a>
                   </div>
                 </div>
@@ -142,26 +144,26 @@
             </div>
             <div data-caption-animate="fadeIn" data-caption-delay="300" class="swiper-overlay fadeIn animated"></div>
           </div>
-          <div data-slide-bg="img/SliderImg4.png" class="swiper-slide"
-            style="background-image: url(&quot;img/SliderImg4.png&quot;); background-size: cover; width: 1287px; transform: translate3d(-3861px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
+          <div data-slide-bg="img/SliderImg4.jpg" class="swiper-slide"
+            style="background-image: url(&quot;img/SliderImg4.jpg&quot;); background-size: cover; width: 1287px; transform: translate3d(-3861px, 0px, 0px); transition-duration: 600ms; opacity: 1;"
             data-swiper-slide-index="3">
             <div class="swiper-slide-caption text-md-left">
               <div data-caption-animate="fadeIn" data-caption-delay="300" class="container not-animated">
                 <div class="row">
                   <div class="col-lg-11">
-                    <h1 class="text-bold">Providing the highest quality</h1>
+                    <h1 class="text-bold">Intelligent Traffic Management</h1>
                     <h3>service 24 hours a day</h3>
-                    <p>Technosys provides international express delivery of documents, parcels and freight to<br
-                        class="hidden visible-md visible-lg visible-xl">more than 150 countries around the world within
-                      4 to 7 business days.</p><a href="#" class="btn btn-md btn-big-stone">read more</a>
+                    <p>Detection of Use of Cell Phone While Driving, No Helmet Detection & Triple Riding Detection<br
+                        class="hidden visible-md visible-lg visible-xl">Detect, Capture & Analyze Vehicle Numbers, Traffic
+                        Violations & Improve Traffic Compliance and Detect Critical Incidents & Analyze for Quick Response</p><a href="#" class="btn btn-md btn-big-stone">read more</a>
                   </div>
                 </div>
               </div>
             </div>
             <div data-caption-animate="fadeIn" data-caption-delay="300" class="swiper-overlay not-animated"></div>
           </div>
-          <div data-slide-bg="img/SliderImg2.jpeg" class="swiper-slide"
-            style="background-image: url(&quot;img/SliderImg2.jpeg&quot;); background-size: cover; width: 1287px; transform: translate3d(-5148px, 0px, 0px); transition-duration: 600ms; opacity: 0;"
+          <!-- <div data-slide-bg="img/SliderImg2.jpg" class="swiper-slide"
+            style="background-image: url(&quot;img/SliderImg2.jpg&quot;); background-size: cover; width: 1287px; transform: translate3d(-5148px, 0px, 0px); transition-duration: 600ms; opacity: 0;"
             data-swiper-slide-index="4">
             <div class="swiper-slide-caption text-md-left">
               <div data-caption-animate="fadeIn" data-caption-delay="300" class="container not-animated">
@@ -178,7 +180,7 @@
               </div>
             </div>
             <div data-caption-animate="fadeIn" data-caption-delay="300" class="swiper-overlay not-animated"></div>
-          </div>
+          </div> -->
         </div>
         <!-- Swiper Navigation-->
         <div class="container navigation-wrap">
@@ -193,642 +195,359 @@
     </header>
     <!-- Page Content-->
     <main class="page-content">
-      <!--Fast and reliable delivery services that meet your timeline-->
-      <section class="section-50 section-md-top-75 section-md-bottom-100">
+      <!--Solutions-->
+      <section class="section-50 section-md-top-75 section-md-bottom-50">
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <h3>Fast and reliable services</h3>
+              <p class="text-justify margin-top-30">
+                Our Strength lies in our non compromising, honest & committed approach, ability to understand customer needs, our needs, our capabilities in providing best customized solutions, out system integration capabilities and our well committed, skilled, capable & dedicated teams of marketing, installation and after sales services. Further, our dedicated dealer network with their strength amd capabilities in distribution, installation & after sales services backs up our strength.</p>
             </div>
           </div>
-          <div class="row">
+          <div class="row services-icons">
             <div class="col-sm-6 col-md-4 col-lg-3">
               <!-- Product-->
-              <div class="product"><span class="icon icon-lg text-primary thin-icon-box center-block"></span>
-                <div class="h4"><a href="#">CCTV Surveillance Solutions</a></div>
+              <div class="product"><img src="https://img.icons8.com/wired/64/000000/wallmount-camera.png">
+                <div class="h4"><a href="#">CCTV Surveillance System</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-0">
               <!-- Product-->
-              <div class="product"><span class="icon icon-lg text-primary thin-icon-documents center-block"></span>
-                <div class="h4"><a href="#">Intelligent Traffic Management System</a></div>
+              <div class="product">
+                <img src="https://img.icons8.com/wired/64/000000/traffic-light.png">
+                <div class="h4"><a href="#">Intelligent Traffic Management</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20 offset-md-top-0">
               <!-- Product-->
-              <div class="product"><span class="icon icon-lg text-primary thin-icon-calculator center-block"></span>
+              <div class="product"><img src="https://img.icons8.com/wired/64/000000/id-verified.png">
                 <div class="h4"><a href="#">Access Control System</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20 offset-lg-top-0">
               <!-- Product-->
-              <div class="product"><span class="icon icon-lg text-primary thin-icon-timer center-block"></span>
-                <div class="h4"><a href="#">Intelligent Building Managment Systen</a></div>
+              <div class="product" style="padding: 34px;"><img
+                  src="https://img.icons8.com/dotty/80/000000/machine-learning.png">
+                <div class="h4"><a href="#" style="font-size:20px">Intelligent Building Managment</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20">
               <!-- Product-->
-              <div class="product"><span class="icon icon-lg text-primary thin-icon-cart center-block"></span>
-                <div class="h4"><a href="#">Audio Visual</a></div>
+              <div class="product"><img src="https://img.icons8.com/wired/64/000000/wacom-tablet.png">
+                <div class="h4"><a href="#">Audio Visual System</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20">
               <!-- Product-->
-              <div class="product"><span class="icon icon-lg text-primary thin-icon-desktop center-block"></span>
-                <div class="h4"><a href="#">Intelligent Fire Detection System</a></div>
+              <div class="product"><img src="https://img.icons8.com/ios/50/000000/no-open-fire.png">
+                <div class="h4"><a href="#">Intelligent Fire Detection</a></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20">
+
+              <div class="product"><img src="https://img.icons8.com/wired/64/000000/data-backup.png">
+                <div class="h4"><a href="#">Data Voice based System</a></div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20">
               <!-- Product-->
-              <div class="product"><span class="icon icon-lg text-primary thin-icon-address center-block"></span>
-                <div class="h4"><a href="#">Data Voice</a></div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 offset-top-40 offset-sm-top-20">
-              <!-- Product-->
-              <div class="product"><span class="icon icon-lg text-primary thin-icon-ambulance center-block"></span>
+              <div class="product"><img src="https://img.icons8.com/wired/64/000000/internet.png">
                 <div class="h4"><a href="#">IP based PA System</a></div>
               </div>
             </div>
+            <div class="col-sm-12 col-lg-12 offset-top-30">
+              <a href="#" class="btn btn-md btn-primary">read more</a>
+            </div>
           </div>
         </div>
+        <!-- elevator pitch -->
         <div class="container bg-primary section-50 section-md-top-70 section-md-bottom-85">
-          <h3>Track search</h3>
-          <div class="h4">This service will help you find out where your parcel is now</div>
+          <h3>Why Technosys</h3>
+          <div class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque nemo quisquam nam, sit corrupti nostrum. Veritatis repellendus asperiores, temporibus ipsam quam ratione facilis possimus tempora non unde odio quas.</div>
           <!-- RD Navbar Search-->
-          <div class="rd-navbar-search">
+          <!-- <div class="rd-navbar-search">
             <form action="search.php" method="GET" class="rd-navbar-search-form">
               <label class="rd-navbar-search-form-input">
                 <input type="text" name="s" placeholder="Enter the invoice number" autocomplete="off">
               </label>
               <button type="submit" class="rd-navbar-search-form-submit">Search</button>
             </form><span class="rd-navbar-live-search-results"></span>
+          </div> -->
+        </div>
+      </section>
+
+      <!--Trusted Customers-->
+      <section>
+        <div class="trusted-customer section-md-bottom-50">
+          <h2 class="title">Trusted by:</h2>
+          <div class="customer-logo" style="overflow: hidden;">
+            <div class="featured-orgs text-center p-2">
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/alba.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/avtech.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/cadix.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/capricorn.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/ge-interlogix.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/hid.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/keico.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/logo-3.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/logo-4.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/logo-5.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/logo-6.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/logo-7.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/logo-8.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/morley-ias.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/motorola.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/naf-logo.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/naf.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/panasonic.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/samsung.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/syris.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/system-sensor.jpg" width="130" height="61"></a>
+              <a href="#" class="animate-in"><img class="avatar" alt="nla" data-proofer-ignore="true"
+                  src="img/customers/virdi.jpg" width="130" height="61"></a>
+            </div>
           </div>
         </div>
       </section>
 
-      <!--For Private Customers-->
-      <section>
-        <div class="range range-condensed">
-          <div class="cell-md-6 reveal-flex thumbnail-1"><img src="img/page-1_img04.jpg" alt=""
-              class="thumbnail-image">
-            <div class="caption">
-              <h3>For Private Customers</h3>
-              <p>It's totally pure and simple. All you have to do is
-                to drop into the nearest DeliveryCo. depot or book a courier to your
-                home or office.</p><a href="#" class="btn btn-md btn-white">read more</a>
+      <section class="section-customer-reviews section-md-bottom-50">
+        <h3>Listen! what our customers have to say</h3>
+        <div class="customer-carousel-container">
+          <div class="customer-carousel">
+            <div class="customer-review">
+              <div class="customer-details">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Prashant Pandey <br>
+                  DSP, Bhopal, M.P Police
+                </p>
+              </div>
+              <div class="customer-review-text text-justify">
+
+
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </div>
+            </div>
+            <div class="customer-review">
+              <div class="customer-details">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Prashant Pandey <br>
+                  DSP, Bhopal, M.P Police
+                </p>
+              </div>
+              <div class="customer-review-text text-justify">
+
+
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </div>
+            </div>
+            <div class="customer-review">
+              <div class="customer-details">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Prashant Pandey <br>
+                  DSP, Bhopal, M.P Police
+                </p>
+              </div>
+              <div class="customer-review-text text-justify">
+
+
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </div>
+            </div>
+            <div class="customer-review">
+              <div class="customer-details">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Prashant Pandey <br>
+                  DSP, Bhopal, M.P Police
+                </p>
+              </div>
+              <div class="customer-review-text text-justify">
+
+
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </div>
+            </div>
+            <div class="customer-review">
+              <div class="customer-details">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Prashant Pandey <br>
+                  DSP, Bhopal, M.P Police
+                </p>
+              </div>
+              <div class="customer-review-text text-justify">
+
+
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </div>
+            </div>
+            <div class="customer-review">
+              <div class="customer-details">
+                <img src="https://via.placeholder.com/50" alt="">
+                <p>Prashant Pandey <br>
+                  DSP, Bhopal, M.P Police
+                </p>
+              </div>
+              <div class="customer-review-text text-justify">
+
+
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </div>
             </div>
           </div>
-          <div class="cell-md-6 reveal-flex thumbnail-1"><img src="img/page-1_img05.jpg" alt=""
-              class="thumbnail-image">
-            <div class="caption">
-              <h3>For Business Customers</h3>
-              <p>Manage your time and expenses by selecting the option
-                that suits you best. The service is available for shipments from all
-                over the world to US and vice versa.</p><a href="#" class="btn btn-md btn-white">read more</a>
-            </div>
-          </div>
+          <!-- <div class="owl-nav">
+            <div class="customer-prev">prev</div>
+            <div class="customer-next">next</div>
+          </div> -->
         </div>
       </section>
 
-      <!--Map-->
-      <section>
-        <!-- RD Google Map-->
-        <div class="rd-google-map">
-          <div class="map-overlay-aside"></div>
-          <h3 class="content-aside-right">Nearest Depot</h3>
-          <div id="google-map" data-zoom="14" data-x="-73.9874068" data-y="40.643180"
-            class="rd-google-map__model lazy-loaded" style="position: relative; overflow: hidden;">
-            <div
-              style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
-              <div
-                style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"
-                class="gm-style">
-                <div
-                  style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"
-                  tabindex="0">
-                  <div
-                    style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
-                    <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
-                      <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
-                        <div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -192, -63);">
-                          <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 768px; top: -256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 768px; top: 0px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: 768px; top: 256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                          <div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;">
-                            <div style="width: 256px; height: 256px;"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
-                    <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
-                    <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
-                      <div
-                        style="width: 34px; height: 48px; overflow: hidden; position: absolute; left: -17px; top: -48px; z-index: 0;">
-                        <img
-                          style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; width: 34px; height: 48px; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                          alt="" src="img/gmap_marker.png" draggable="false"></div>
-                      <div
-                        style="width: 34px; height: 48px; overflow: hidden; position: absolute; left: 18px; top: -124px; z-index: -76;">
-                        <img
-                          style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; width: 34px; height: 48px; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                          alt="" src="img/gmap_marker.png" draggable="false"></div>
-                      <div
-                        style="width: 34px; height: 48px; overflow: hidden; position: absolute; left: -162px; top: -2px; z-index: 46;">
-                        <img
-                          style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; width: 34px; height: 48px; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                          alt="" src="img/gmap_marker.png" draggable="false"></div>
-                      <div
-                        style="width: 34px; height: 48px; overflow: hidden; position: absolute; left: -162px; top: -109px; z-index: -61;">
-                        <img
-                          style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; width: 34px; height: 48px; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                          alt="" src="img/gmap_marker.png" draggable="false"></div>
-                      <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
-                        <div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -192, -63);">
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: -256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 768px; top: -256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 768px; top: 0px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 768px; top: 256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 256px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;">
-                          </div>
-                          <div
-                            style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: -256px;">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
-                      <div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -192, -63);">
-                        <div
-                          style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_014.png"></div>
-                        <div
-                          style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_007.png"></div>
-                        <div
-                          style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_009.png"></div>
-                        <div
-                          style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_012.png"></div>
-                        <div
-                          style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_004.png"></div>
-                        <div
-                          style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_008.png"></div>
-                        <div
-                          style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_005.png"></div>
-                        <div
-                          style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_016.png"></div>
-                        <div
-                          style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_018.png"></div>
-                        <div
-                          style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_003.png"></div>
-                        <div
-                          style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_002.png"></div>
-                        <div
-                          style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_017.png"></div>
-                        <div
-                          style="position: absolute; left: 768px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_010.png"></div>
-                        <div
-                          style="position: absolute; left: 768px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_006.png"></div>
-                        <div
-                          style="position: absolute; left: 768px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_013.png"></div>
-                        <div
-                          style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_015.png"></div>
-                        <div
-                          style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt.png"></div>
-                        <div
-                          style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
-                          <img
-                            style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            draggable="false" alt="" role="presentation" src="img/vt_011.png"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"
-                    class="gm-style-pbc">
-                    <p class="gm-style-pbt"></p>
-                  </div>
-                  <div
-                    style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
-                    <div
-                      style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
-                      <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
-                      <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
-                      <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
-                        <div
-                          style="width: 34px; height: 48px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: -17px; top: -48px; z-index: 0;"
-                          title=""><img
-                            style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; width: 34px; height: 48px; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            alt="" src="img/gmap_marker.png" draggable="false"></div>
-                        <div
-                          style="width: 34px; height: 48px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: 18px; top: -124px; z-index: -76;"
-                          title=""><img
-                            style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; width: 34px; height: 48px; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            alt="" src="img/gmap_marker.png" draggable="false"></div>
-                        <div
-                          style="width: 34px; height: 48px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: -162px; top: -2px; z-index: 46;"
-                          title=""><img
-                            style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; width: 34px; height: 48px; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            alt="" src="img/gmap_marker.png" draggable="false"></div>
-                        <div
-                          style="width: 34px; height: 48px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: -162px; top: -109px; z-index: -61;"
-                          title=""><img
-                            style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; width: 34px; height: 48px; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
-                            alt="" src="img/gmap_marker.png" draggable="false"></div>
-                      </div>
-                      <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
-                    </div>
-                  </div>
-                </div><iframe aria-hidden="true"
-                  style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: medium none;"
-                  src="img/a.html" frameborder="0"></iframe>
-                <div
-                  style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
-                  <a style="position: static; overflow: visible; float: none; display: inline;" target="_blank"
-                    rel="noopener"
-                    href="https://maps.google.com/maps?ll=40.64318,-73.987407&amp;z=14&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3"
-                    title="Open this area in Google Maps (opens a new window)">
-                    <div style="width: 66px; height: 26px; cursor: pointer;"><img
-                        style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"
-                        alt="" src="img/google_white5.png" draggable="false"></div>
-                  </a></div>
-                <div
-                  style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 494px; top: 185px;">
-                  <div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div>
-                  <div style="font-size: 13px;">Map data ©2019 Google</div><button
-                    style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: absolute; cursor: pointer; -moz-user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"
-                    draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect"><img
-                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A"
-                      style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button>
+      <section class="social-and-awards-section">
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="section-md-bottom-50">Awards and Recognitions</h4>
+            <div class="row awards-recognitions">
+              <div class="col-sm-12 col-md-12">
+                <div class="col-sm-6 col-md-6">
+                  <img src="https://www.videonetics.com/wp-content/uploads/2019/03/Logo-FIST-Award-2019-OL.png"
+                    alt="Fist" width="" />
                 </div>
-                <div class="gmnoprint"
-                  style="z-index: 1000001; position: absolute; right: 289px; bottom: 0px; width: 127px;">
-                  <div draggable="false" style="-moz-user-select: none; height: 14px; line-height: 14px;"
-                    class="gm-style-cc">
-                    <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                      <div style="width: 1px;"></div>
-                      <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
-                      </div>
-                    </div>
-                    <div
-                      style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
-                      <a style="text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2019
-                        Google</span></div>
-                  </div>
+                <div class="col-sm-6 col-md-6">
+                  <h5>Indian OEM of the Year</h5>
                 </div>
-                <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
-                  <div
-                    style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
-                    Map data ©2019 Google</div>
+              </div>
+              <div class="col-sm-12 col-md-12">
+                <div class="col-sm-6 col-md-6">
+                  <img src="https://www.videonetics.com/wp-content/uploads/2018/12/Logo_1.png" alt="Deloitte">
                 </div>
-                <div class="gmnoprint gm-style-cc"
-                  style="z-index: 1000001; -moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 217px; bottom: 0px;"
-                  draggable="false">
-                  <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                    <div style="width: 1px;"></div>
-                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
-                    </div>
-                  </div>
-                  <div
-                    style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
-                    <a style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);"
-                      href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank"
-                      rel="noopener">Terms of Use</a></div>
-                </div><button
-                  style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: none; border: 0px none; margin: 10px; padding: 0px; position: absolute; cursor: pointer; -moz-user-select: none; top: 0px; right: 0px;"
-                  draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view"
-                  type="button"></button>
-                <div draggable="false"
-                  style="-moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 118px; bottom: 0px;"
-                  class="gm-style-cc">
-                  <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                    <div style="width: 1px;"></div>
-                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
-                    </div>
-                  </div>
-                  <div
-                    style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
-                    <a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google"
-                      style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;"
-                      href="https://www.google.com/maps/@40.64318,-73.9874068,14z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3">Report
-                      a map error</a></div>
+                <div class="col-sm-6 col-md-6">
+                  <h5>Technosys Ranked Amongst Fastest Growing Companies in Asia Pacific by Deloitte</h5>
                 </div>
-                <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"
-                  style="margin: 10px; -moz-user-select: none; position: absolute; bottom: 126px; right: 40px;"
-                  draggable="false" controlwidth="40" controlheight="113">
-                  <div class="gmnoprint" style="position: absolute; left: 0px; top: 32px;" controlwidth="40"
-                    controlheight="81">
-                    <div draggable="false"
-                      style="-moz-user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;">
-                      <button
-                        style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: relative; cursor: pointer; -moz-user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"
-                        draggable="false" title="Zoom in" aria-label="Zoom in" type="button"
-                        class="gm-control-active"><img style="height: 18px; width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
-                          style="height: 18px; width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23333%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
-                          style="height: 18px; width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23111%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button>
-                      <div
-                        style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;">
-                      </div><button
-                        style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: relative; cursor: pointer; -moz-user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"
-                        draggable="false" title="Zoom out" aria-label="Zoom out" type="button"
-                        class="gm-control-active"><img style="height: 18px; width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
-                          style="height: 18px; width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
-                          style="height: 18px; width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button>
-                    </div>
-                  </div>
-                  <div style="position: absolute; left: 20px; top: 0px;"></div>
-                  <div class="gmnoprint" controlwidth="40" controlheight="40"
-                    style="display: none; position: absolute;">
-                    <div style="width: 40px; height: 40px;"><button
-                        style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: none; border: 0px none; margin: 0px 0px 32px; padding: 0px; position: relative; cursor: pointer; -moz-user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"
-                        draggable="false" title="Rotate map 90 degrees" aria-label="Rotate map 90 degrees" type="button"
-                        class="gm-control-active"><img style="height: 18px; width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
-                          style="height: 18px; width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
-                          style="height: 18px; width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button><button
-                        style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: relative; cursor: pointer; -moz-user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"
-                        draggable="false" title="Tilt map" aria-label="Tilt map" type="button"
-                        class="gm-tilt gm-control-active"><img style="width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
-                          style="width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
-                          style="width: 18px;"
-                          src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button>
-                    </div>
-                  </div>
+              </div>
+              <div class="col-sm-12 col-md-12">
+                <div class="col-sm-6 col-md-6">
+                  <img src="https://www.videonetics.com/wp-content/uploads/2018/12/Logo.png" alt="Deloitte">
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <h5>Fastest Growing Technology Enterprise of the Year</h5>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12">
+                <div class="col-sm-6 col-md-6">
+                  <img src="https://www.videonetics.com/wp-content/uploads/2018/02/secona.jpg" alt="Deloitte">
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <h5>Asia Pacific by Deloitte</h5>
                 </div>
               </div>
             </div>
-            <div
-              style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;">
-              <div><img alt="" src="img/google_gray.svg"
-                  style="padding: 0px; margin: 0px; border: 0px none; height: 17px; vertical-align: middle; width: 52px; -moz-user-select: none;"
-                  draggable="false"></div>
-              <div style="line-height: 20px; margin: 15px 0px;"><span
-                  style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">This page can't load Google Maps
-                  correctly.</span></div>
-              <table style="width: 100%;">
-                <tr>
-                  <td style="line-height: 16px; vertical-align: middle;"><a
-                      href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=keyless#api-key-and-billing-errors"
-                      target="_blank" rel="noopener" style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Do you own
-                      this website?</a></td>
-                  <td style="text-align: right;"><button class="dismissButton">OK</button></td>
-                </tr>
-              </table>
+
+          </div>
+          <div class="col-md-6">
+            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="500"
+              data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+              data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/facebook">
+                  <!-- <img  src="img/page-1_img04.jpg" /> -->
+                  <div class="card">
+                    <img class="card-img" src="img/page-1_img04.jpg" alt="facebook-image">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Visit: Technosys Facebook</h5>
+                      <p class="card-text">Technosys groups awarded number one from Times Magzine for empowering smart
+                        cities for smart India</p>
+                    </div>
+                  </div>
+                </a></blockquote>
             </div>
-            <div
-              style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;">
-              <div><img alt="" src="img/google_gray.svg"
-                  style="padding: 0px; margin: 0px; border: 0px none; height: 17px; vertical-align: middle; width: 52px; -moz-user-select: none;"
-                  draggable="false"></div>
-              <div style="line-height: 20px; margin: 15px 0px;"><span
-                  style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">This page can't load Google Maps
-                  correctly.</span></div>
-              <table style="width: 100%;">
-                <tr>
-                  <td style="line-height: 16px; vertical-align: middle;"><a
-                      href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=billing#api-key-and-billing-errors"
-                      target="_blank" rel="noopener" style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Do you own
-                      this website?</a></td>
-                  <td style="text-align: right;"><button class="dismissButton">OK</button></td>
-                </tr>
-              </table>
+            <div class="container-fluid twitter-container">
+              <a class="twitter-timeline" data-width="500" data-height="300" data-aria-polite="assertive"
+                href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">
+                <h3>Twitter</h3>
+                <h4 class="fallback-content-twitter">New installation of Surveillance System in Bhopal, checkout our
+                  twitter page to get the latest update about our current activities.</h4>
+                <a class="twitter-follow-button" href="https://twitter.com/TwitterDev" data-size="large">
+                  Follow @TwitterDev</a>
+              </a>
+              <div class="twitter-fallback-content">
+              </div>
             </div>
           </div>
-          <ul class="rd-google-map__locations">
-            <li data-x="-73.9874068" data-y="40.643180">
-              <h5 class="text-primary">Depot #1</h5>
-              <address class="contact-info">
-                <p>28 Jackson Blvd Ste 1020 Chicago IL 60604-2340</p>
-                <dl>
-                  <dt><span class="icon icon-xs text-primary material-icons-local_phone"></span></dt>
-                  <dd><a href="callto:#">800-2345-6789</a></dd>
-                </dl>
-                <dl>
-                  <dt><span class="icon icon-xs text-primary material-icons-access_time"></span></dt>
-                  <dd><span>7 Days a week from 9:00 am to 7:00 pm</span></dd>
-                </dl>
-              </address>
-            </li>
-            <li data-x="-73.9844067" data-y="40.648180">
-              <h5 class="text-primary">Depot #2</h5>
-              <address class="contact-info">
-                <p>8901 Marmora Road, Glasgow, D04 89GR.</p>
-                <dl>
-                  <dt><span class="icon icon-xs text-primary material-icons-local_phone"></span></dt>
-                  <dd><a href="callto:#">800-603-6035</a></dd>
-                </dl>
-                <dl>
-                  <dt><span class="icon icon-xs text-primary material-icons-access_time"></span></dt>
-                  <dd><span>7 Days a week from 9:00 am to 7:00 pm</span></dd>
-                </dl>
-              </address>
-            </li>
-            <li data-x="-73.9999067" data-y="40.640180">
-              <h5 class="text-primary">Depot #3</h5>
-              <address class="contact-info">
-                <p>8901 Marmora Road, Glasgow, D04 89GR.</p>
-                <dl>
-                  <dt><span class="icon icon-xs text-primary material-icons-local_phone"></span></dt>
-                  <dd><a href="callto:#">800-2345-6789</a></dd>
-                </dl>
-                <dl>
-                  <dt><span class="icon icon-xs text-primary material-icons-access_time"></span></dt>
-                  <dd><span>7 Days a week from 9:00 am to 7:00 pm</span></dd>
-                </dl>
-              </address>
-            </li>
-            <li data-x="-73.9999067" data-y="40.647180">
-              <h5 class="text-primary">Depot #4</h5>
-              <address class="contact-info">
-                <p>28 Jackson Blvd Ste 1020 Chicago IL 60604-2340</p>
-                <dl>
-                  <dt><span class="icon icon-xs text-primary material-icons-local_phone"></span></dt>
-                  <dd><a href="callto:#">800-2345-6789</a></dd>
-                </dl>
-                <dl>
-                  <dt><span class="icon icon-xs text-primary material-icons-access_time"></span></dt>
-                  <dd><span>7 Days a week from 9:00 am to 7:00 pm</span></dd>
-                </dl>
-              </address>
-            </li>
-          </ul>
+      </section>
+
+      <section>
+        <div class="youtube-section section-md-top-50">
+          <h3>Youtube</h3>
+          <div class="scroll-x">
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/770HVHEI284" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/770HVHEI284" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/770HVHEI284" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/770HVHEI284" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/770HVHEI284" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </section>
 
-      <section class="section-50 section-md-top-80 section-md-bottom-100 bg-big-stone offset-top--1">
+
+      <section class="footer-bottom-upper-img"></section>
+      <section class="section-50 section-md-bottom-100 bg-big-stone offset-top--1">
         <div class="shell">
           <div class="range">
             <div class="cell-sm-6 cell-md-3 text-sm-left">
-              <h4>For Private<br class="hidden visible-md visible-lg visible-xl">Customers</h4>
+              <h4>Our <br class="hidden visible-md visible-lg visible-xl">Services</h4>
               <ul class="list">
-                <li><a href="#" class="text-dodger-blue">Shipping</a></li>
-                <li><a href="#" class="text-dodger-blue">Receiving</a></li>
-                <li><a href="#" class="text-dodger-blue">Payment</a></li>
-                <li><a href="#" class="text-dodger-blue">Additional Services</a></li>
+                <li><a href="#" class="text-dodger-blue">Intelligent Traffic Management System</a></li>
+                <li><a href="#" class="text-dodger-blue">CCTV Surviliance System</a></li>
+                <li><a href="#" class="text-dodger-blue">Access control system</a></li>
+                <!-- <li><a href="#" class="text-dodger-blue">Additional Services</a></li>
                 <li><a href="#" class="text-dodger-blue">Documents</a></li>
-                <li><a href="#" class="text-dodger-blue">Rates</a></li>
+                <li><a href="#" class="text-dodger-blue">Rates</a></li> -->
               </ul>
             </div>
             <div class="cell-sm-6 cell-md-4 text-sm-left">
-              <h4>For Business<br class="hidden visible-md visible-lg visible-xl">Customers</h4>
+              <h4>Why <br class="hidden visible-md visible-lg visible-xl">Technosys</h4>
               <ul class="list">
-                <li><a href="#" class="text-dodger-blue">For Online Stores</a></li>
-                <li><a href="#" class="text-dodger-blue">For Corporate Customers</a></li>
+                <li><a href="#" class="text-dodger-blue">Online Customer Stores</a></li>
+                <!-- <li><a href="#" class="text-dodger-blue">For Corporate Customers</a></li> -->
                 <li><a href="#" class="text-dodger-blue">Customer Support Center</a></li>
-                <li><a href="#" class="text-dodger-blue">Open an account</a></li>
+                <!-- <li><a href="#" class="text-dodger-blue">Open an account</a></li> -->
               </ul>
             </div>
             <div class="cell-md-5 text-md-left">
@@ -836,15 +555,16 @@
               <address class="contact-info text-white">
                 <dl class="unit unit-md unit-md-horizontal unit-md-middle unit-spacing-xs">
                   <dt class="unit-left"><span class="icon icon-primary icon-sm material-icons-location_on"></span></dt>
-                  <dd class="unit-body"><a href="#">28 Jackson Blvd Ste 1020 Chicago IL 60604-2340</a></dd>
+                  <dd class="unit-body"><a href="#"> Beside SBI Branch, Ekant Park, Char Imli, Bhopal, Madhya Pradesh
+                      462016</a></dd>
                 </dl>
                 <dl class="unit unit-md unit-md-horizontal unit-md-middle unit-spacing-xs">
                   <dt class="unit-left"><span class="icon icon-primary icon-sm material-icons-local_phone"></span></dt>
-                  <dd class="unit-body"><a href="callto:#">800-2345-6789</a></dd>
+                  <dd class="unit-body"><a href="callto:#">0755 420 1019</a></dd>
                 </dl>
                 <dl class="unit unit-md unit-md-horizontal unit-md-middle unit-spacing-xs">
                   <dt class="unit-left"><span class="icon icon-primary icon-sm material-icons-access_time"></span></dt>
-                  <dd class="unit-body">7 Days a week from 9:00 am to 9:00 pm</dd>
+                  <dd class="unit-body">7 Days a week from 11:00 am to 7:00 pm</dd>
                 </dl>
               </address>
               <div class="btn-group"><a href="#" class="btn btn-sm btn-calypso">facebook</a><a href="#"
@@ -868,10 +588,12 @@
   </div>
   <!-- Java script-->
   <script src="js/core.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script src="js/script.js"></script>
-  <a href="#" id="ui-to-top" class="ui-to-top fa fa-angle-up"></a>
+  <!-- <a href="#" id="ui-to-top" class="ui-to-top fa fa-angle-up"></a> -->
   <!-- <div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;"> -->
-    <!-- <span
+  <!-- <span
       style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbswy</span> -->
   </div>
 </body><!-- Google Tag Manager -->

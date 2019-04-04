@@ -1410,5 +1410,14 @@ $document.ready(function () {
     if (plugins.socialite.length) {
         Socialite.load();
     }
+
+    $(".customer-carousel").owlCarousel({
+        items:3,
+        loop:true,
+        mouseDrag:true,
+        touchDrag:true,
+        nav: true,
+        navText:["",""]
+    });
 });
 
