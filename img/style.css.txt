@@ -1,0 +1,15 @@
+<style>
+@keyframes dash{
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+path.ellipse-path {
+    stroke-dasharray: 1;
+    animation: dash 1s linear infinite;
+}
+</style>
