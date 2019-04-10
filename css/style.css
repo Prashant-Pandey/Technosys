@@ -40399,7 +40399,8 @@ svg#ui-to-top {
   }
   
   path.ellipse-path {
-	  stroke-dasharray: 1;
+	  stroke-dasharray: 10;
 	  stroke-width: 20px;
+	  -webkit-animation: dash 1s ease-in-out infinite;
 	  animation: dash 1s ease-in-out infinite;
   }
