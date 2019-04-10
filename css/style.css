@@ -40390,17 +40390,17 @@ svg#ui-to-top {
 }
 
 @keyframes dash{
-	from {
+	0% {
 	  stroke-dashoffset: 0;
 	}
-	to {
-	  stroke-dashoffset: 1000;
+	100% {
+	  stroke-dashoffset: 1240;
 	}
   }
   
   path.ellipse-path {
-	  stroke-dasharray: 600;
+	  stroke-dasharray: 590;
 	  stroke-width: 20px;
-	  -webkit-animation: dash 1s ease-in-out infinite;
-	  animation: dash 1s ease-in-out infinite;
+	  -webkit-animation: dash 2s linear infinite;
+	  animation: dash 2s linear infinite;
   }
