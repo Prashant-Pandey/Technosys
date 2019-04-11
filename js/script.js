@@ -64,6 +64,26 @@ var userAgent = navigator.userAgent.toLowerCase(),
  */
 $document.ready(function () {
 
+    // let length = document.getElementById("ellipse-path").getTotalLength();
+    // console.log(length);
+
+    let SafeCity = $('#SafeCity').click(function (e) {  
+        e.preventDefault();
+        window.location.href = "SafeCity.html";
+    })
+    let ITMS = $('#ITMS').click(function (e) {  
+        e.preventDefault();
+        window.location.href = "ITMS.html";
+    })
+    let ATCS = $('#ATCS').click(function (e) {  
+        e.preventDefault();
+        window.location.href = "ATCS.html";
+    })
+    let IPSystem = $('#IPSystem').click(function (e) {  
+        e.preventDefault();
+        window.location.href = "IPSystem.html";
+    })
+
     function getSwiperHeight(object, attr) {
         var val = object.attr("data-" + attr),
             dim;
@@ -287,7 +307,7 @@ $document.ready(function () {
                     },
                     resultPanel = $('.' + mailFormSettings.resultPanelClass),
                     mailFormOptions = {
-                        data: {"form-type": mailFormSettings.formType},
+                        data: { "form-type": mailFormSettings.formType },
                         error: function (result) {
                             resultPanel.text(mailFormSettings.msg[result]);
                         },
@@ -393,22 +413,22 @@ $document.ready(function () {
                     plugins.googleMap.googleMap({
                         styles: [{
                             "featureType": "landscape",
-                            "stylers": [{"hue": "#FFBB00"}, {"saturation": 43.400000000000006}, {"lightness": 37.599999999999994}, {"gamma": 1}]
+                            "stylers": [{ "hue": "#FFBB00" }, { "saturation": 43.400000000000006 }, { "lightness": 37.599999999999994 }, { "gamma": 1 }]
                         }, {
                             "featureType": "road.highway",
-                            "stylers": [{"hue": "#FFC200"}, {"saturation": -61.8}, {"lightness": 45.599999999999994}, {"gamma": 1}]
+                            "stylers": [{ "hue": "#FFC200" }, { "saturation": -61.8 }, { "lightness": 45.599999999999994 }, { "gamma": 1 }]
                         }, {
                             "featureType": "road.arterial",
-                            "stylers": [{"hue": "#FF0300"}, {"saturation": -100}, {"lightness": 51.19999999999999}, {"gamma": 1}]
+                            "stylers": [{ "hue": "#FF0300" }, { "saturation": -100 }, { "lightness": 51.19999999999999 }, { "gamma": 1 }]
                         }, {
                             "featureType": "road.local",
-                            "stylers": [{"hue": "#FF0300"}, {"saturation": -100}, {"lightness": 52}, {"gamma": 1}]
+                            "stylers": [{ "hue": "#FF0300" }, { "saturation": -100 }, { "lightness": 52 }, { "gamma": 1 }]
                         }, {
                             "featureType": "water",
-                            "stylers": [{"hue": "#0078FF"}, {"saturation": -13.200000000000003}, {"lightness": 2.4000000000000057}, {"gamma": 1}]
+                            "stylers": [{ "hue": "#0078FF" }, { "saturation": -13.200000000000003 }, { "lightness": 2.4000000000000057 }, { "gamma": 1 }]
                         }, {
                             "featureType": "poi",
-                            "stylers": [{"hue": "#00FF6A"}, {"saturation": -1.0989010989011234}, {"lightness": 11.200000000000017}, {"gamma": 1}]
+                            "stylers": [{ "hue": "#00FF6A" }, { "saturation": -1.0989010989011234 }, { "lightness": 11.200000000000017 }, { "gamma": 1 }]
                         }]
                     });
 
@@ -425,7 +445,7 @@ $document.ready(function () {
             .done(function () {
 
                 var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: -33.8688, lng: 151.2195},
+                    center: { lat: -33.8688, lng: 151.2195 },
                     zoom: 13,
                     icon: image,
                     styles: [{
@@ -437,88 +457,88 @@ $document.ready(function () {
                             }
                         ]
                     },
-                        {
-                            "featureType": "landscape",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "color": "#f2f2f2"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "poi",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "visibility": "off"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "poi.business",
-                            "elementType": "geometry.fill",
-                            "stylers": [
-                                {
-                                    "visibility": "on"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "saturation": -100
-                                },
-                                {
-                                    "lightness": 45
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "visibility": "simplified"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.arterial",
-                            "elementType": "labels.icon",
-                            "stylers": [
-                                {
-                                    "visibility": "off"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "transit",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "visibility": "off"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "water",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "color": "#b4d4e1"
-                                },
-                                {
-                                    "visibility": "on"
-                                }
-                            ]
-                        }]
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "color": "#f2f2f2"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.business",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 45
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "color": "#b4d4e1"
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    }]
                 });
                 var image = 'images/gmap_marker.png';
                 var beachMarker = new google.maps.Marker({
-                    position: {lat: -33.8688, lng: 151.2195},
+                    position: { lat: -33.8688, lng: 151.2195 },
                     map: map,
                     icon: image
                 });
@@ -852,18 +872,18 @@ $document.ready(function () {
                 if (window.innerWidth < 479) {
                     dateCountdownItem.TimeCircles({
                         time: {
-                            Minutes: {show: true},
-                            Seconds: {show: false}
+                            Minutes: { show: true },
+                            Seconds: { show: false }
                         }
                     }).rebuild();
                 } else if (window.innerWidth < 767) {
                     dateCountdownItem.TimeCircles({
                         time: {
-                            Seconds: {show: false}
+                            Seconds: { show: false }
                         }
                     }).rebuild();
                 } else {
-                    dateCountdownItem.TimeCircles({time: time}).rebuild();
+                    dateCountdownItem.TimeCircles({ time: time }).rebuild();
                 }
             });
         }
@@ -953,7 +973,7 @@ $document.ready(function () {
 
                 if (progressItem.getAttribute("data-easing") && !isIE) {
                     $(document)
-                        .on("scroll", {"barItem": bar}, $.proxy(function (event) {
+                        .on("scroll", { "barItem": bar }, $.proxy(function (event) {
                             var bar = event.data.barItem;
                             if (isScrolledIntoView($(this)) && this.className.indexOf("progress-bar--animated") === -1) {
                                 this.className += " progress-bar--animated";
@@ -1398,7 +1418,7 @@ $document.ready(function () {
 
             scrollerItem.mCustomScrollbar({
                 scrollInertia: 200,
-                scrollButtons: {enable: true}
+                scrollButtons: { enable: true }
             });
         }
     }
@@ -1412,12 +1432,27 @@ $document.ready(function () {
     }
 
     $(".customer-carousel").owlCarousel({
-        items:3,
-        loop:true,
-        mouseDrag:true,
-        touchDrag:true,
+        items: 3,
+        loop: true,
+        mouseDrag: true,
+        touchDrag: true,
         nav: true,
-        navText:["",""]
+        navText: ["", ""],
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            1000: {
+                items: 3,
+                nav: true,
+                loop: false
+            }
+        }
     });
 });
 
