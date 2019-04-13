@@ -64,7 +64,7 @@ var userAgent = navigator.userAgent.toLowerCase(),
  */
 $document.ready(function () {
 
-    // let length = document.getElementById("ellipse-path").getTotalLength();
+    // let length = document.getElementById("line-two").getTotalLength();
     // console.log(length);
 
     let SafeCity = $('#SafeCity').click(function (e) {  
