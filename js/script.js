@@ -59,6 +59,8 @@ var userAgent = navigator.userAgent.toLowerCase(),
         socialite: $(".socialite")
     },
     i = 0;
+
+
 /**
  * Initialize All Scripts
  */
@@ -81,7 +83,7 @@ $document.ready(function () {
     })
     let IPSystem = $('#IPSystem').click(function (e) {  
         e.preventDefault();
-        window.location.href = "IPSystem.html";
+        window.location.href = "VMS.html";
     })
 
     function getSwiperHeight(object, attr) {

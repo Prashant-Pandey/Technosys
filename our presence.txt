@@ -1,0 +1,166 @@
+<div class="row margin-top-30">
+              <div class="col-md-6 col-lg-6">
+                <img src="img/Our-Presence-bhopal.png" class="img-responsive" alt="">
+                <h4>Bhopal</h4>
+                <div class="project-list">
+                  <ul>
+                    <li>MP 11 and MP 51 Projects</li>
+                    <li>PHQ Survelliance System</li>
+                    <li>UVSS Vehical Scanning</li>
+                    <li>Control Room Bhopal</li>
+                    <li>Regional Court Survillence</li>
+                    <li>Bhopal Smart City</li>
+                    <li>CM House Survelliance</li>
+                    <li>Fire Control System</li>
+                    <li>Wireless Survelliance</li>
+                    <li>X-Ray Bio Scanner</li>
+                  </ul>
+                </div>
+                <!-- <ul class="text-center">
+                  <li>
+                    <img src="img/Our-Presence-bhopal.png" class="img-responsive" alt="">
+                    <h4>Bhopal</h4>
+                    <h4>City Survelliance project - 61 Cities</h4>
+                    <p class="margin-top-0 text-bold">(Madhya Pradesh, Chhattisgarh, Jharkhand, Uttarakhand, Punjab)
+                    </p>
+                  </li>
+                  <li>
+                    <h4>ITMS Projects - 5 Projects</h4>
+                    <p class="margin-top-0 text-bold">(Madhya Pradesh, Chhattisgarh, Jharkhand)</p>
+                  </li>
+                  <li>
+                    <h4>State-wide project for Madhya Pradesh</h4>
+                    <p class="margin-top-0 text-bold">1042 Police stations across the Madhya Pradesh</p>
+                  </li>
+                </ul> -->
+              </div>
+              <div class="hidden-sm-xs col-md-6 col-lg-6">
+                <img src="img/Our-Presence-Indore.png" class="img-responsive" alt="">
+                <h4>Indore</h4>
+                <div class="project-list">
+                  <ul>
+                    <li>MP 11 and MP 51 Survelliance Project</li>
+                    <li>Intelligent Traffic Management System</li>
+                    <li>Traffic Survillence System</li>
+                    <li>Smart City Indore</li>
+                  </ul>
+                </div>
+                <!-- <ul class="text-center">
+                  <li>
+                      <img src="img/Our-Presence-Indore.png" class="img-responsive" alt="">
+                      <h4>Indore</h4>
+                  </li>
+                  <li>
+                    <h4>Indian Air Force</h4>
+                    <p class="margin-top-0 text-bold">Northern Command (12 Bases)</p>
+                  </li>
+                  <li>
+                    <h4>District Courts</h4>
+                    <p class="margin-top-0 text-bold">(Lucknow, Ujjain, Katni)</p>
+                  </li>
+                  <li>
+                    <h4>Government House Survelliance</h4>
+                    <p class="margin-top-0 text-bold">CM House, Bhopal (Madhya Pradesh)</p>
+                  </li>
+                  <li>
+                    <h4>BPCL</h4>
+                    <p class="margin-top-0 text-bold">(Multiple Locations across India)</p>
+                  </li>
+                </ul> -->
+              </div>
+              <div class="hidden-sm-xs col-md-6 col-lg-6">
+                <img src="img/Our-Presence--lucknow.png" class="img-responsive" alt="">
+                <h4>Lucknow</h4>
+                <div class="project-list">
+                  <ul>
+                    <li>Regional Court</li>
+                    <li>Smart City Lucknow</li>
+                    <li>Intelligent Traffic Management System</li>
+                    <li>Traffic Survillence System</li>
+                  </ul>
+                </div>
+                <!-- <ul class="text-center">
+                    <li>
+                        <img src="img/Our-Presence--lucknow.png" class="img-responsive" alt="">
+                        <h4>Lucknow</h4>
+                    </li>
+                  <li>
+                    <h4>Delhi Yamuna Safe River Project</h4>
+                  </li>
+                  <li>
+                    <h4>AIIMS Survelliance System</h4>
+                    <p class="margin-top-0 text-bold">(Delhi)</p>
+                  </li>
+                  <li>
+                    <h4>Amity University, School and Play-school</h4>
+                    <p class="margin-top-0 text-bold">All over India</p>
+                  </li>
+                  <li>
+                    <h4>District Courts</h4>
+                    <p class="margin-top-0 text-bold">(Lucknow, Ujjain, Katni)</p>
+                  </li>
+                </ul> -->
+              </div>
+              <div class="hidden-sm-xs col-md-6 col-lg-6">
+
+                <img src="img/Our-Presence-dehradun.png" class="img-responsive" alt="">
+                <h4>Dehradun</h4>
+                <div class="project-list">
+                  <ul>
+                    <li>Government Office Video Survillence</li>
+                    <li>Smart City Lucknow</li>
+                    <li>ISRO Dehradun</li>
+                    <li>Power Fencing, Dehradun Jail</li>
+                    <li>CPWD Survillence Dehradun</li>
+                    <li>IIRS Dehradun</li>
+                  </ul>
+                </div>
+                <!-- <ul class="text-center">
+                    <li>
+                        <img src="img/Our-Presence-dehradun.png" class="img-responsive" alt="">
+                        <h4>Dehradun</h4>
+                    </li>
+                  <li>
+                    <h4>GAIL</h4>
+                    <p class="margin-top-0 text-bold">Noida (Utter Pradesh)</p>
+                  </li>
+                  <li>
+                    <h4>IOCL</h4>
+                    <p class="margin-top-0 text-bold">Noida (Utter Pradesh)</p>
+                  </li>
+                  <li>
+                    <h4>LBSNAA: IAS Academy training</h4>
+                    <p class="margin-top-0 text-bold">Mussoorie (Uttarakhand)</p>
+                  </li>
+                  <li>
+                        <h4>BHU</h4>
+                        <p class="margin-top-0 text-bold">Varanasi (Utter Pradesh)</p>
+                      </li>
+                  <li>
+                    <h4>Survelliance Systems for Airports</h4>
+                    <p class="margin-top-0 text-bold">4 Major Airports across India</p>
+                  </li>
+                </ul> -->
+              </div>
+              <div class="hidden-sm-xs col-md-6 col-lg-6">
+                <img src="img/Our-Presence-delhi.png" class="img-responsive" alt="">
+                <h4>Delhi</h4>
+                <div class="project-list">
+                  <ul>
+                    <li>PWD Survillence System</li>
+                    <li>Smart City Delhi</li>
+                    <li>GAIL Delhi</li>
+                    <li>Police Headquarters Survillence System</li>
+                    <li>AIIMS Survillence System</li>
+                    <li>Airport Survillence System</li>
+                    <li>Amity University Tunstile</li>
+                  </ul>
+                </div>
+                <!-- <ul class="text-center">
+                    <li>
+                        <img src="img/Our-Presence-delhi.png" class="img-responsive" alt="">
+                        <h4>Delhi</h4>
+                    </li>
+                  </ul> -->
+              </div>
+            </div>
