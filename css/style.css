@@ -40698,7 +40698,7 @@ path.ellipse-path {
 	padding-bottom: 0;
 }
 
-path#link-component {
+#link-component {
 	stroke-dasharray: 50;
 	stroke-dashoffset: 0;
 	-webkit-animation: lineAnim 4s linear infinite;
@@ -40729,6 +40729,10 @@ path#link-component {
 	100% {
 		stroke-dashoffset: 1000;
 	}
+}
+
+.atcs-svg{
+	height: 500px
 }
 
 .speciality-points{
@@ -40873,4 +40877,21 @@ path#link-component {
 
 .white-bg{
 	background-color: #ffffff;
+}
+.services-project-city-list h3{
+	font-size: 18px;
+	text-align: left;
+}
+.services-project-city-list ul{
+	list-style-type: disc;
+	text-align: start;
+	padding-left: 18px;
+}
+
+.contact-info .text-dark{
+	color: #000000 !important;
+}
+
+.list-fst-letter-cap li{
+	text-transform: capitalize;
 }
