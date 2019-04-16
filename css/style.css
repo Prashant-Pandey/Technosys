@@ -11099,12 +11099,9 @@ html.lt-ie-10 .range>[class*="cell-lg-preffix-"] {
 	padding-bottom: 0;
 }
 
-.page-head.header-custom .contact-info {
-	color: #fff;
-}
-
 .page-head.header-custom .contact-info a {
-	color: #fff;
+	color: #000000;
+	font-weight: 800;
 }
 
 .page-head.header-custom .contact-info .icon-primary {
@@ -40177,7 +40174,7 @@ label span {
 
 .trusted-customer .title {
 	padding-bottom: 35px;
-	color: #0072e6
+	color: #ffffff;
 }
 
 .awards-display {
@@ -40515,7 +40512,7 @@ padding-bottom: 50px;
 }
 
 .rd-navbar-inner {
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background-image: linear-gradient(135deg, #494949 0%, #313131 50%, #111111 100%);
 }
 
 .why-technosys-section {
@@ -40882,8 +40879,10 @@ path.ellipse-path {
 	font-size: 18px;
 	text-align: left;
 }
-.services-project-city-list ul{
+.list-style-disc{
 	list-style-type: disc;
+}
+.services-project-city-list ul{
 	text-align: start;
 	padding-left: 18px;
 }
