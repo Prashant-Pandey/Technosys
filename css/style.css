@@ -11136,7 +11136,7 @@ html.lt-ie-10 .range>[class*="cell-lg-preffix-"] {
 }
 
 .page-head .contact-info a {
-	color: #fcfcfc;
+	color: #4e4e4e;
 	transition: all .3s ease;
 	position: relative;
 	padding-right: 8px;
@@ -11145,7 +11145,7 @@ html.lt-ie-10 .range>[class*="cell-lg-preffix-"] {
 .page-head .contact-info a:hover,
 .page-head .contact-info a:active {
 	/* color: #000000; */
-	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .page-head .contact-info a:focus {
@@ -12347,6 +12347,10 @@ h4+.contact-info {
 
 .contact-info.text-white a {
 	color: #fff;
+}
+
+.text-white{
+	color: #fff !important;
 }
 
 .contact-info a {
@@ -36984,7 +36988,7 @@ ol ol {
  * @licesne      MIT License
  */
 .swiper-container {
-	height: 91vh;
+	height: 90vh;
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
@@ -37001,7 +37005,7 @@ ol ol {
 @media (min-width: 1300px) {
 	.swiper-container {
 		height: 100vh !important;
-		min-height: 900px !important;
+		min-height: 500px !important;
 	}
 }
 
@@ -37551,27 +37555,22 @@ fieldset[disabled] .swiper-slide .rd-navbar-search-form-submit {
 	right: 0;
 	height: 100%;
 	z-index: 0;
-	background: rgba(0, 127, 255, 0.4);
+	background: rgba(0, 0, 0, 0.6);
 }
 
 /* swiper overlay */
-@media (min-width: 480px) {
+@media (min-width: 992px) {
 	.swiper-slide .swiper-overlay {
-		background: rgba(19, 22, 31, 0.7);
+		background: rgba(19, 22, 31, 0.6);
 		-webkit-transform-origin: 100% 100%;
 		-moz-transform-origin: 100% 100%;
 		-ms-transform-origin: 100% 100%;
 		transform-origin: 100% 100%;
-		-webkit-transform: rotate(-31deg);
-		transform: rotate(-31deg);
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
 		height: 200%;
 		right: 50%;
-	}
-}
-
-@media (min-width: 992px) {
-	.swiper-slide .swiper-overlay {
-		right: 45%;
+		/* display: none; */
 	}
 }
 
@@ -40016,8 +40015,8 @@ label span {
 
 
 .featured-orgs {
-	margin-right: -35px;
-	/* margin-left: -35px; */
+	margin-right: -70px;
+	margin-left: -25px;
 	/* max-height: 348px; */
 	overflow: hidden;
 	text-align: center;
@@ -40761,6 +40760,10 @@ path.ellipse-path {
 	align-content: center;
 }
 
+.direction-center-flex{
+	flex-direction: column;
+}
+
 .smart-city-page + .page-content img{
 	width: 100%;
 }
@@ -40900,12 +40903,80 @@ path.ellipse-path {
 
 }
 
-#MP-Square{
-	opacity: 0;	
+.team-area-2{
+	border: 1px solid #000000;
+	position: relative;
+    overflow: hidden;
+    transition: all .5s;
 }
 
-#Madhya_Pradesh:hover + #MP-Square{
-	fill: #000000;
-	opacity: 1
+.team-overlay-2{
+	position: absolute;
+    background-color: rgb(60, 96, 223);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    transform: skew(0deg, 0deg) translateY(40px);
+    -webkit-transform: skew(0deg, 0deg) translateY(40px);
+    -moz-transform: skew(0deg, 0deg) translateY(40px);
+    transition: all .5s;
 }
 
+.team-img-2{
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.team-img-2 {
+    height: 330px;
+	border: 1px solid rgb(60, 96, 223);
+	position: relative;
+    overflow: hidden;
+}
+
+.team-info-2 {
+    text-align: center;
+    transform: skew(0deg, 0deg) translateY(30px);
+    -webkit-transform: skew(0deg, 0deg) translateY(30px);
+    -moz-transform: skew(0deg, 0deg) translateY(30px);
+    transition: all .5s;
+}
+
+.team-area-2:hover .team-img-2 .team-overlay-2{
+	width: 100%;
+  	height: 100%;
+  	transform: skew(0deg, 0deg) translateY(0px);
+    -webkit-transform: skew(0deg, 0deg) translateY(0px);
+    -moz-transform: skew(0deg, 0deg) translateY(0px);
+    opacity: .8;
+}
+.team-area-2:hover .team-img-2 .team-info-2{
+	margin-top: 129px;
+	transform: skew(0deg, 0deg) translateY(0px);
+    -webkit-transform: skew(0deg, 0deg) translateY(0px);
+    -moz-transform: skew(0deg, 0deg) translateY(0px);
+}
+.team-area-2:hover .team-img-2 .team-info-2 .btn-2{
+	margin-top: 26px;
+	display: inline-block;
+}
+
+.team-img-2 .team-info-2 h4 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team-img-2 .team-info-2 .btn-2 {
+    display: none;
+    padding: 8px 15px;
+    background: #fff;
+    color: #3c60df;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
